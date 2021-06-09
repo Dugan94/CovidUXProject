@@ -47,7 +47,7 @@ function initMap(){
 
   addMarker({
     coords:{lat: 37.93170, lng: -122.06102}, 
-    content: ''
+    content: '<h1>Lynn MA</h1>'
   });//(5) Oak Park Hills Chapel
 
   addMarker({

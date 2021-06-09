@@ -1,0 +1,20 @@
+{
+  "name": "covid19project",
+  "version": "1.0.0",
+  "description": "In this project we are adding funeral business locations and covid test centers to help those looking.",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.5.1",
+    "lite-server": "^2.6.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "author": "",
+  "license": "ISC"
+}
