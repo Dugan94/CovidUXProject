@@ -27,27 +27,27 @@ function initMap(){
 
   addMarker({
     coords:{lat: 37.97814, lng: -122.04578},
-    content:'<h1>Lynn MA</h1>'
+    content:''
   }); //(1)Diablo Valley Cremation & Funeral Services
 
   addMarker({
     coords:{lat: 38.00333, lng: -122.07258},
-    content:'<h1>Lynn MA</h1>'
+    content:''
   }); //(2)Alta Vista Cremation & Funeral Service 
 
   addMarker({
     coords:{lat: 37.96710, lng: -121.99737}, 
-    content:'<h1>Lynn MA</h1>'
+    content:''
   }); //(3)Ouimet Bros. Concord Funeral Chapel
 
   addMarker({
     coords:{lat: 37.89571, lng: -122.07803},
-    content:'<h1>Lynn MA</h1>'
+    content:''
   }); //(4) Hull's Walnut Creek Chapel
 
   addMarker({
     coords:{lat: 37.93170, lng: -122.06102}, 
-    content: '<h1>Lynn MA</h1>'
+    content: ''
   });//(5) Oak Park Hills Chapel
 
   addMarker({
