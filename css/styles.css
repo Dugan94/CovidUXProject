@@ -1,0 +1,164 @@
+.jumbotron {
+    background: #354B5E;
+    padding: 4.5rem 4.5rem;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    color: #D74B4B;
+    font-size: 5rem;
+    margin-left: 2rem;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    margin-left: 2rem;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    color: #D74B4B;
+ 
+}
+
+h4 {
+    font-family: 'Nunito', sans-serif;
+    color: #354B5E;
+    margin-top: 0.3rem;
+
+}
+
+.row-content {
+    padding: 50px 0px;
+}
+
+/*Adds margin to top of items inside of the header */
+.header-adjust {
+    margin-top: 9rem;
+}
+/*Adds styling to the menu items in the header*/
+.menu-styles {
+    margin-right: 2rem;
+    margin-top: 2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*Add styles to maps*/
+.map-style {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    border: thin solid black;
+  }
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+/* Begins the CSS for the parallax, vh is used to make it relative to viewport */
+.wrapper {
+    height: 75vh;
+  }
+  
+  .parallax-img {
+    background-image: url('https://i.ibb.co/2WQ6DvD/whiteflowersadjust.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+.bounding {
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+.tab-content {
+    border: 1px solid rgb(180, 180, 180);
+    background: #DCDDD8;
+    border-top: none;
+    padding: 35px;
+    margin-bottom: 75px;
+}
+
+.tab-bg {
+    background: #DCDDD8;
+}
+
+.tab-styles {
+    margin-right: 25%;
+    margin-left: 25%
+}
+
+.nav-tabs .nav-link {
+    color: #545b62;
+    border-top: 1px solid rgb(180, 180, 180);
+    border-right: 1px solid rgb(180, 180, 180);
+    border-left: 1px solid rgb(180, 180, 180);
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #DCDDD8;
+    border-top: 1px solid rgb(180, 180, 180);
+    border-right: 1px solid rgb(180, 180, 180);
+    border-left: 1px solid rgb(180, 180, 180);
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link:hover {
+    border-top: 1px solid rgb(180, 180, 180);
+    border-right: 1px solid rgb(180, 180, 180);
+    border-left: 1px solid rgb(180, 180, 180);
+    border-bottom: none;
+}
+
+/* Styles for buttons on the tabs */
+
+.tab-btn {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background: #354B5E;
+}
+
+.tab-btn:hover {
+    color: #ffffff;
+    background: #D74B4B;
+}
+
+a {
+    color: #f8f9fa;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #f8f9fa;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.map-search {
+    margin: 80px;
+}
+
+.footer-text {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+
+footer {
+    background: #354B5E;
+}

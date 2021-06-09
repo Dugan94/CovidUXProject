@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Search Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Quicksand:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body onload="initMap();">
+
+    <!--Jumbotron and header class-->
+    <header class="jumbotron">
+        <div class="container-fluid">
+            <div class="row">
+                <!--Header and subheader-->
+                <div class="col-xs-6">
+                    <h1>CoVare</h1>
+                    <h2 class="d-none d-lg-block">A guide for finding after-life services for COVID19 patients</h2>
+                </div>
+                <!--Beginning of the navbar items.  ml-auto pushes everything to the left.-->
+                <div class="col-xs-6 ml-auto">
+                    <nav class="navbar navbar-expand-xl navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-item nav-link menu-styles" href="index.html">Home </a>
+                                <a class="nav-item nav-link active menu-styles" href="search.html">Search<span
+                                        class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link menu-styles" href="#resources">Resources</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Begin content beneath the header-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="mx-auto text-center header-adjust">Search for Funeral Homes</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex align-items-center m-auto">
+                    <h4 class="mx-auto text-center">Search for funeral homes and other resources in your area</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Begin map-->
+    <div class="container">
+        <div class="row">
+            <div class="col map-search">
+                <div class="mx-auto align-items-center map-styles" id="map">
+
+                    <script>
+
+                        function initMap() {
+                            // Map options
+                            var options = {
+                                zoom: 11,
+                                center: { lat: 38.00333, lng: -122.1341 }
+                            }
+
+                            // New map
+                            var map = new
+                                google.maps.Map(document.getElementById('map'), options);
+
+                            /*
+                            // Add marker 
+                            var marker = new google.maps.Marker({
+                              position:{lat: 37.97814, lng: -122.04578},
+                              map:map
+                            });
+                            
+                            var infoWindow = new google.maps.InfoWindow({
+                              content:'<h1>Lynn MA</h1>'
+                            });
+                      
+                            marker.addListener('click', function(){
+                            infoWindow.open(map, marker);
+                            });
+                            */
+
+                            addMarker({
+                                coords: { lat: 37.97814, lng: -122.04578 },
+                                content: '<h4>Diablo Valley Cremation & Funeral Services</h4> <div> Address: 2261 Commerce Ave, Concord, CA 94520; Phone:(925) 998-0303</div>'
+                            }); //(1)Diablo Valley Cremation & Funeral Services
+
+                            addMarker({
+                                coords: { lat: 38.00333, lng: -122.07258 },
+                                content: '<h4>Alta Vista Cremation & Funeral Service</h4> <div>Address: 4795 Blum Rd, Pacheco, CA 94553; Phone:(925) 228-1500</div>'
+                            }); //(2)Alta Vista Cremation & Funeral Service 
+
+                            addMarker({
+                                coords: { lat: 37.96710, lng: -121.99737 },
+                                content: '<h4>Ouimet Bros. Concord Funeral Chapel</h4> <div>Address: 4125 Clayton Rd, Concord, CA 94521; Phone:(925) 682-4242</div>'
+                            }); //(3)Ouimet Bros. Concord Funeral Chapel
+
+                            addMarker({
+                                coords: { lat: 37.89571, lng: -122.07803 },
+                                content: '<h4>Hulls Walnut Creek Chapel</h4> <div>Address: 1139 Saranap Ave, Walnut Creek, CA 94595; Phone:(925) 934-5400</div>'
+                            }); //(4) Hull's Walnut Creek Chapel
+
+                            addMarker({
+                                coords: { lat: 37.93170, lng: -122.06102 },
+                                content: '<h1>Oak Park Hills Chapel</h4> <div>Address: 3111 N Main St, Walnut Creek, CA 94597; Phone:(925) 934-6500</div>'
+                            });//(5) Oak Park Hills Chapel
+
+                            addMarker({
+                                coords: { lat: 37.89426, lng: -122.05939 },
+                                content: '<h4>Neptune Society of Northern California</h4> <div>Address: 1855 Olympic Blvd STE 110, Walnut Creek, CA 94596; Phone:(925) 944-5100</div>'
+                            });//(6) Neptune Society of Northern California
+
+                            addMarker({
+                                coords: { lat: 37.94745, lng: -122.10169 },
+                                content: '<h4>Oakmont Memorial Park & Mortuary</h4> <div>Address: 2099 Reliez Valley Rd, Lafayette, CA 94549; Phone:(925) 935-3311</div>'
+                            });//(7) Oakmont Memorial Park & Mortuary
+
+                            addMarker({
+                                coords: { lat: 37.94439, lng: -122.10643 },
+                                content: '<h4>Queen of Heaven Catholic Cemetery & Mortuary</h4> <div>Address: 1965 Reliez Valley Rd, Lafayette, CA 94549; Phone:(925) 932-0900</div>'
+                            });//(8) Queen of Heaven Catholic Cemetery & Mortuary
+
+
+                            //Add Marker Function
+                            function addMarker(props) {
+                                var marker = new google.maps.Marker({
+                                    position: props.coords,
+                                    map: map,
+                                });
+
+                                // Check content
+                                if (props.content) {
+                                    var infoWindow = new google.maps.InfoWindow({
+                                        content: props.content
+                                    });
+
+                                    marker.addListener('click', function () {
+                                        infoWindow.open(map, marker);
+                                    });
+                                }
+                            }
+                        }
+
+                    </script>
+                    <script
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoc8RwFzArqZcxMsRah0iZaT9pYBIY5Es"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="container-fluid">
+        <div class="row row-content">
+            <!--Header and subheader-->
+            <div class="col-xs-6">
+                <h1>CoVare</h1>
+                <h2 class="d-none d-lg-block">A guide for finding after-life services for COVID19 patients</h2>
+            </div>
+            <!--Beginning of the navbar items.  ml-auto pushes everything to the left.-->
+            <div class="col-xs-6 ml-auto">
+                <nav class="navbar navbar-expand-xl navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link menu-styles" href="index.html">Home </a>
+                            <a class="nav-item nav-link active menu-styles" href="search.html">Search<span
+                                    class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link menu-styles" href="#resources">Resources</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
