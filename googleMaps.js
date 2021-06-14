@@ -65,6 +65,11 @@ function initMap(){
     content: ''
   });//(8) Queen of Heaven Catholic Cemetery & Mortuary
 
+  addFoodbank({
+    coords:{lat: 37.97529, lng: -122.04385},
+    content: ''
+  });//(1) Monument Crisis Center
+
 
     //Add Marker Function
     function addMarker(props){
@@ -83,7 +88,26 @@ function initMap(){
         infoWindow.open(map, marker);
         });
       }
-    }
+    } 
+
+    function addFoodbank(props){
+      var marker = new google.maps.Marker({
+      position:props.coords,
+      map:map,
+      icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+      });
+
+      // Check content
+      if(props.content){
+        var infoWindow = new google.maps.InfoWindow({
+          content:props.content
+        });
+
+        marker.addListener('click', function(){
+        infoWindow.open(map, marker);
+        });
+      }
+    } 
   } 
 
 
