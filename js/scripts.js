@@ -70,6 +70,17 @@ function initMap(){
     content: ''
   });//(1) Monument Crisis Center
 
+  addFoodbank({
+    coords:{lat: 37.96916, lng: -122.08042},
+    content: ''
+  });//(2) Adventist Community Service Center
+
+  addFoodbank({
+    coords:{lat: 37.928772, lng: -122.05185},
+    content: ''
+  });//(3) Kind Hearts Foood Pantry 
+
+
 
     //Add Marker Function
     function addMarker(props){
