@@ -73,55 +73,50 @@
         </div>
     </div>
     <!--Beginning of Tab Cards-->
-    <div class="container-fluid">
-        <div class="row row-content">
-            <div class="col">
-                <!--ID here is what the anchor in the nav is attached to-->
-                <h1 class="mx-auto text-center header-adjust" id="resources">Resources</h1>
-                <div class="tab-styles header-adjust">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item tab-bg"><a href="#CDC" class="nav-link active" role="tab"
-                                data-toggle="tab">Resource 1</a></li>
-
-                        <li class="nav-item tab-bg"><a class="nav-link" href="#MH" role="tab" data-toggle="tab">Resource
-                                2</a></li>
-                        <li class="nav-item tab-bg"><a class="nav-link" href="#NIH" role="tab" data-toggle="tab">Resource
-                                3</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade show active" id="CDC">
-                            <h3>CDC</h3>
-                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies 
-                                mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer 
-                                placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. </p>
-                                <div class="text-center">
-                            <button type="button" class="btn btn-md tab-btn">
-                                <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/funeral-guidance.html" target="_blank">
-                                Learn More</a></button>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade show" id="MH">
-                            <h3>Mental Health Resources</h3>
-                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies 
-                                mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer 
-                                placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. </p>
-                                <div class="text-center">
-                            <button type="button" class="btn btn-md tab-btn">
+    <div class="container">
+        <div class="tab_triger">
+            <ul>
+                <li><label for="tab1">CDC</label></li> 
+                <li><label for="tab2">Mental Health</label></li> 
+                <li><label for="tab3">NIH</label></li>
+            </ul>
+        </div>
+        <div class="tab_container_wrap">
+            <input type="radio" checked id="tab1" name="1">
+            <div class="tab_content_box">
+                <h2>Tab Content Box1</h2>
+                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies 
+                    mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer 
+                    placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. </p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-md tab-btn">
                             <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/funeral-guidance.html" target="_blank">
-                                Learn More</a></button>
-                            </div>
+                            Learn More</a></button>
+                        </div>   
+            </div>
+            <input type="radio" id="tab2" name="1">
+            <div class="tab_content_box">
+                <h2>Tab Content Box2</h2>
+                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies 
+                    mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer 
+                    placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. </p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-md tab-btn">
+                        <a href="https://psychiatry.ucsf.edu/copingresources" target="_blank">
+                            Learn More</a></button>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade show" id="NIH">
-                            <h3>Resource 3</h3>
-                            <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies 
-                                mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer 
-                                placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. </p>
-                                <div class="text-center">
-                            <button type="button" class="btn btn-md tab-btn">Learn More</button>
-                            </div>
-                        </div>
+            </div>
+            <input type="radio" id="tab3" name="1">
+            <div class="tab_content_box">
+                <h2>Tab Content Box3</h2>
+                <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipiscing elit, urna consequat felis vehicula class ultricies 
+                    mollis dictumst, aenean non a in donec nulla. Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer 
+                    placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus. </p>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-md tab-btn">
+                        <a href="https://covid19.nih.gov/" target="_blank">
+                            Learn More</a></button>
                     </div>
-                </div>
             </div>
         </div>
     </div>
